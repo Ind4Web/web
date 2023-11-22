@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="Stylesheet" type="text/css" href="../css/login.css">
+    <script src="../script/login.js" defer></script>
+    <title>Iniciar sesion</title>
+</head>
+<body>
+    <section class="container1" style="display: initial;" id="container1">
+        <div class="login-card">
+            <section class="right-side">
+                <div class="logo3">
+                    <img src="../img/Logo 3.png " width="360px" height="425px">
+                </div>
+            </section>
+            <section class="left-side">
+                <form class="loginForm">
+                    <fieldset>
+                        <div class="content header">
+                            <h1>INICIAR SESION</h1>
+                        </div>
+                        <div class="content form">
+                            <div id="first-form-level">
+                                <label for="userEmail-login">
+                                    CORREO ELECTRÓNICO 
+                                    <span class="small-text-login" id="loginEmail-old">(obligatorio)</span>
+                                    <span class="small-text-register" style="display: none;" id="loginEmail-new">- Formato de correo electrónico no valido</span>
+                                    <span class="small-text-register" style="display: none;" id="loginErr">- El correo o la contraseña no son válidos</span>
+                                </label>
+                                <input id="userEmail-login" type="text" class="userEmail-login" required>
+                            </div>
+                            <div id="first-form-level">
+                                <label for="inputPassword-login">
+                                    CONTRASEÑA  
+                                    <span class="small-text-login" id="loginPassword-old">(obligatorio)</span>
+                                    <span class="small-text-register" style="display: none;" id="loginPassword-new">- Debe tener 8 caracteres como minimo</span>
+                                    <span class="small-text-register" style="display: none;" id="loginErr">- El correo o la contraseña no son válidos</span>
+                                </label>
+                                <input id="userPassword-login" type="password" class="userPassword-login">
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="content input">
+                        <div>
+                            <input type="submit" value="INICIAR SESIÓN" class="login-btn"></input><br><br>
+                            <button class="my-button" disabled>
+                                <p><a href="#" id="register-btn" onclick="registerSwitch()">CREAR CUENTA</a></p>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <a href="../../../Ind4Web/index.html"><span class="left2"></span></a>
+        </div>
+    </section>
+
+    <section class="container2" style="display: none;" id="container2">
+        <div class="register-card">
+            <section class="right-side">
+                <div class="logo3">
+                    <img src="../img/Logo 3.png " width="390px" height="510px">
+                </div>
+            </section>
+            <section class="left-side">
+                <form class="registerForm">
+                    <fieldset>
+                        <div class="content header">
+                            <h1>CREAR CUENTA</h1>
+                        </div>
+                        <div class="content form">
+                            <div id="first-form-level">
+                                <label for="inputName">NOMBRE DE USUARIO<span class="small-text-register" style="display: none;" id="registerName">- Debe tener entre 2 y 32 caracteres</span></label>
+                                <input id="inputName" type="text" name="userName" class="userName">
+                            </div>
+                            <div id="first-form-level">
+                                <label for="inputEmail">
+                                    CORREO ELECTRÓNICO  
+                                    <span class="small-text-register" style="display: none;" id="registerEmail">- Formato de correo electrónico no valido</span>
+                                    <span class="small-text-register" style="display: none;" id="registerEmail2">- Este correo electrónico ya esta registrado</span>
+                                </label>
+                                <input id="inputEmail" type="text" name="userMail" class="userEmail-register" required>
+                            </div>
+                            <div id="first-form-level">
+                                <label for="inputPassword">CONTRASEÑA<span class="small-text-register" style="display: none;" id="registerPass">- Debe tener 8 caracteres como minimo</span></label>
+                                <input id="inputPassword" type="password" name="userPassword" class="userPassword-register" required>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <div class="content input">
+                        <div>
+                            <input type="submit" value="CREAR" class="login-btn"></input><br><br>
+                            <button class="my-button">
+                                <a href="#" id="login-btn" onclick="loginSwitch()">INICIAR SESIÓN</a>
+                            </button>
+                        </div>
+                        <a href="../../../Ind4Web/index.html"><span class="left"></span></a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </section>
+
+</body>
+</html>

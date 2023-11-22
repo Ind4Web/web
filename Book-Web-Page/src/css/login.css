@@ -1,0 +1,591 @@
+/*Fonts*/
+@font-face {
+    font-family: interRegular;
+    src: url(../font/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: interMedium;
+    src: url(../font/Inter-Medium.ttf);
+}
+
+@font-face {
+    font-family: interSemibold;
+    src: url(../font/Inter-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: interBold;
+    src: url(../font/Inter-Bold.ttf);
+}
+
+/*Variables section*/
+:root {
+    --card-color: #D8C4B6;
+    --main-black: #1D1D1F;
+    --main-white: #F5F5F7;
+    --primary-blue: #6AA7B5;
+    --secondary-blue: #5f5c5c;
+    --error-red: #BE1E37;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    background-color: --main-white;
+    background: linear-gradient(to bottom right, #a1e8f8, white);
+    background-repeat: no-repeat;
+    background-position: center right;
+    display: grid;
+    place-items: center;
+}
+
+/*Login Style*/
+
+.container1{
+    /*display: unset;*/
+    width: 815px;
+    height: 425px;
+}
+
+.login-card {
+    background-color: white;
+    width: 825px;
+    height: 425px;
+    border-radius: 5px;
+    position: absolute;
+    display: flex;
+    align-items: right;
+}
+
+fieldset{
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.content {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+}
+
+.left-side{
+    margin: 50px 100px 35px 15px;
+    padding: 0;
+    width: 430px;
+}
+
+.content.header{
+    margin-bottom: 15px;
+    color: var(--main-black);
+}
+
+.content.header h1{
+    margin: 0;
+    font-family: interSemibold;
+    font-size: 1.5rem;
+    margin-bottom: 10px ;
+}
+
+.content.header p{
+    margin: 0;
+    font-family: interRegular;
+}
+
+.content.form{
+    gap: 15px;
+}
+
+#first-form-level {
+    width: 26.05rem;
+    display: grid;
+}
+
+/*.content.form div{
+    display: grid;
+}*/
+
+.content.form div label {
+    color: var(--main-black);
+    font-family: interBold;
+    font-size: 0.9rem;
+}
+
+.small-text-register {
+    color: var(--error-red);
+    font-family: interMedium;
+    font-size: 0.75rem;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.small-text-login {
+    color: var(--main-black);
+    font-family: interMedium;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+}
+
+.userName {
+    height: 40px;
+    width: 26.05rem;
+    padding: 0 0 0 10px;
+    background-color: var(--main-white);
+    color: var(--main-black);
+    font-family: interRegular;
+    font-size: 1rem;
+    border: 1.5px solid var(--secondary-blue);
+    margin-top: 10px;
+    border-radius: 2px;
+}
+.userEmail-register {
+    height: 40px;
+    width: 26.05rem;
+    padding: 0 0 0 10px;
+    background-color: var(--main-white);
+    color: var(--main-black);
+    font-family: interRegular;
+    font-size: 1rem;
+    border: 1.5px solid var(--secondary-blue);
+    margin-top: 10px;
+    border-radius: 2px;
+}
+.userPassword-register {
+    height: 40px;
+    width: 26.05rem;
+    padding: 0 0 0 10px;
+    background-color: var(--main-white);
+    color: var(--main-black);
+    font-family: interRegular;
+    font-size: 1rem;
+    border: 1.5px solid var(--secondary-blue);
+    margin-top: 10px;
+    border-radius: 2px;
+}
+.userPassword-login {
+    height: 40px;
+    width: 26.05rem;
+    padding: 0 0 0 10px;
+    background-color: var(--main-white);
+    color: var(--main-black);
+    font-family: interRegular;
+    font-size: 1rem;
+    border: 1.5px solid var(--secondary-blue);
+    margin-top: 10px;
+    border-radius: 2px;
+}
+.userEmail-login {
+    height: 40px;
+    width: 26.05rem;
+    padding: 0 0 0 10px;
+    background-color: var(--main-white);
+    color: var(--main-black);
+    font-family: interRegular;
+    font-size: 1rem;
+    border: 1.5px solid var(--secondary-blue);
+    margin-top: 10px;
+    border-radius: 2px;
+}
+
+.content.input div p{
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: interRegular;
+}
+
+.content.input div p a {
+    text-decoration: none;
+    color: var(--secondary-blue);
+}
+
+.content.input div a {
+    margin: 0;
+    font-size: 0.9rem;
+    font-family: interRegular;
+    text-decoration: none;
+    color: var(--secondary-blue);
+}
+
+.content.input div {
+    width: 26.8rem;
+}
+
+.login-btn{
+    margin: 45px 0 10px 0;
+    padding: 0;
+    width: 26.8rem;
+    height: 45px;
+    font-family: interBold;
+    font-size: 100%;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 30px;
+    color: var(--main-white);
+    background-color: var(--primary-blue);
+}
+
+.content.fourth {
+    display: grid;
+    place-items: center;
+}
+
+.content.fourth p {
+    margin: 40px 0 0 0;
+    font-family: interSemibold;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+/*Responsive functions*/
+@media (width < 865px) {
+    .right-side {
+        display: none;
+    }
+
+    .left-side {
+        margin: 35px;
+    }
+
+    .container1{
+        width: 500px;
+    }
+    
+    .login-card {
+        width: 500px;
+    }
+}
+
+@media (width < 550px) {
+    html,
+    body {
+        background-image: none;
+        height: 100%;
+    }
+
+    .right-side {
+        display: none;
+    }
+
+    .left-side {
+        margin: 0;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .container1{
+        width: 100%;
+        height: 100%;
+    }
+
+    .container2{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .login-card {
+        width: 100%;
+        height: 100%;
+    }
+
+    .register-card {
+        width: 100%;
+        height: 100%;
+    }
+
+    #input {
+        width: 97.61%;
+    }
+
+    .content.form div {
+        width: 100%;
+    }
+
+    .content.input div {
+        width: 100%;
+    }
+    
+    .login-btn {
+        width: 100%;
+    }
+}
+
+/*Registration style*/
+
+/*.container2*/
+
+.register-card {
+    border-radius: 10px;
+    background-color: white;
+    width: 865px;
+    height: 510px;
+    display: flex;
+    align-items: right;
+}
+
+.dropdown-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown {
+    font-family: interRegular;
+    position: relative;
+    width: 120px;
+    height: 42px;
+}
+
+.dropdown::before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--main-black);
+    border-top: 2px solid var(--main-white);
+    border-right: 2px solid var(--main-white);
+    transform: rotate(-45deg);
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.dropdown.active::before {
+    top: 18px;
+    transform: rotate(-225deg);
+}
+
+.dropdown.active .option {
+    display: block;
+}
+
+.dropdown input {
+    font-family: interRegular;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: var(--main-white);
+    border: none;
+    outline: none;
+    padding: 0px 0px 0px 10px;
+    border-radius: 5px;
+}
+
+.dropdown .option {
+    position: absolute;
+    top: -165px;
+    width: 110%;
+    height: 160px;
+    background: var(--main-white);
+    border-radius: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: none;
+}
+
+.dropdown .option div {
+    font-family: interRegular;
+    padding: 6px 15px;
+    cursor: pointer;
+}
+
+.dropdown .option div:hover{
+    background: var(--primary-blue);
+    color: var(--main-white);
+}
+
+/*Second Dropdown (month)*/
+
+.dropdown2 {
+    font-family: interRegular;
+    position: relative;
+    width: 120px;
+    height: 42px;
+}
+
+.dropdown2:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--main-black);
+    border-top: 2px solid var(--main-white);
+    border-right: 2px solid var(--main-white);
+    transform: rotate(-45deg);
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.dropdown2.active::before {
+    top: 18px;
+    transform: rotate(-225deg);
+}
+
+.dropdown2.active .option2 {
+    display: block;
+}
+
+.dropdown2 input {
+    font-family: interRegular;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: var(--main-white);
+    border: none;
+    outline: none;
+    padding: 0px 0px 0px 10px;
+    border-radius: 5px;
+}
+
+.dropdown2 .option2 {
+    position: absolute;
+    top: -165px;
+    width: 110%;
+    height: 160px;
+    background: var(--main-white);
+    border-radius: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: none;
+}
+
+.dropdown2 .option2 div {
+    font-family: interRegular;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.dropdown2 .option2 div:hover{
+    background: var(--primary-blue);
+    color: var(--main-white);
+}
+
+/*Third Dropdown (year)*/
+
+.dropdown3 {
+    font-family: interRegular;
+    position: relative;
+    width: 120px;
+    height: 42px;
+}
+
+.dropdown3:before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: 10px;
+    z-index: 10000;
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--main-black);
+    border-top: 2px solid var(--main-white);
+    border-right: 2px solid var(--main-white);
+    transform: rotate(-45deg);
+    transition: 0.2s;
+    pointer-events: none;
+}
+
+.dropdown3.active::before {
+    top: 18px;
+    transform: rotate(-225deg);
+}
+
+.dropdown3.active .option3 {
+    display: block;
+}
+
+.dropdown3 input {
+    font-family: interRegular;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background: var(--main-white);
+    border: none;
+    outline: none;
+    padding: 0px 0px 0px 10px;
+    border-radius: 5px;
+}
+
+.dropdown3 .option3 {
+    position: absolute;
+    top: -165px;
+    width: 110%;
+    height: 160px;
+    background: var(--main-white);
+    border-radius: 5px;
+    overflow: hidden;
+    overflow-y: scroll;
+    display: none;
+}
+
+.dropdown3 .option3 div {
+    font-family: interRegular;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.dropdown3 .option3 div:hover{
+    background: var(--primary-blue);
+    color: var(--main-white);
+}
+
+.my-button {
+    padding: 10px 20px;
+    background-color: #D6D8DF;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.left{
+    margin-left: 430px;
+    margin-top: -445px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    box-shadow: -2px 2px 0 #6AA7B5;
+    cursor: pointer;
+}
+.left{
+    transform: rotate(45deg);
+
+}
+.left:hover{
+    box-shadow: -2px 2px 0 #6AA7B5;
+}
+
+.left2{
+    margin-left: -103px;
+    margin-top: 53px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    box-shadow: -2px 2px 0 #6AA7B5;
+    cursor: pointer;
+}
+.left2{
+    transform: rotate(45deg);
+
+}
+.left2:hover{
+    box-shadow: -2px 2px 0 #6AA7B5;
+}
+
